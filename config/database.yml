@@ -23,11 +23,10 @@ default: &default
 
 development:
   <<: *default
-  database: backendcg2
-  username: postgres
-  password: admin
-  port: 5432
-  host: localhost
+  database: daeg0v26ptdvkm
+  username: fmxeikzkazlwvq
+  password: 17b5c50f083606c0cc6f2e332f0feb76755a874e62ceb775d12a1655fc16d642
+  host: ec2-23-21-158-253.compute-1.amazonaws.com
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -83,6 +82,9 @@ test:
 #
 production:
   <<: *default
-  database: backendcg_production
-  username: backendcg
-  password: <%= ENV['BACKENDCG_DATABASE_PASSWORD'] %>
+  database: postgres://fmxeikzkazlwvq:17b5c50f083606c0cc6f2e332f0feb76755a874e62ceb775d12a1655fc16d642@ec2-23-21-158-253.compute-1.amazonaws.com:5432/daeg0v26ptdvkm
+  username: fmxeikzkazlwvq
+  password: 17b5c50f083606c0cc6f2e332f0feb76755a874e62ceb775d12a1655fc16d642
+  host: ec2-23-21-158-253.compute-1.amazonaws.com
+  port: 5432
+  ssl: required
