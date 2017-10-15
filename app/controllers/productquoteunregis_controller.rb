@@ -46,6 +46,6 @@ class ProductquoteunregisController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def productquoteunregi_params
-      params.require(:productquoteunregi).permit(:quantity, :param1, :param2, :param3, :param4, :param5, :quoteunregistered_id, :Product_id)
+      params.require(:productquoteunregi).permit(:quantity, :param1, :param2, :param3, :param4, :param5, :quoteunregistered_id, :product_id)
     end
 end
