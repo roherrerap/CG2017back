@@ -39,3 +39,5 @@ gem 'therubyracer', :platforms => :ruby
 gem 'execjs'
 gem 'devise_token_auth', :git => 'https://github.com/roherrerap/devise_private.git'
 gem 'omniauth'
+gem 'httparty'
+gem 'rack-cors'
